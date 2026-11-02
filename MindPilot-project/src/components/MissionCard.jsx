@@ -1,0 +1,5 @@
+import { Check, Clock3, ArrowUpRight, Pencil, Trash2 } from "lucide-react";
+
+export default function MissionCard({ mission, completed, onToggle, onEdit, onDelete }) {
+  return <article className={`mission-card ${completed ? "mission-done" : ""}`}><div className={`mission-symbol ${mission.color}`}>{mission.category.slice(0,1)}</div><div className="mission-content"><div className="mission-meta"><span>{mission.category}</span><span><Clock3 size={12}/>{mission.duration} min</span></div><h3>{mission.title}</h3><p>{mission.detail}</p><div className="mission-card-actions"><button className={`mission-button ${completed ? "completed" : ""}`} onClick={onToggle}>{completed ? <><Check size={15}/> Completed</> : <>Mark complete <ArrowUpRight size={14}/></>}</button>{onEdit&&<button className="mission-icon-button" onClick={onEdit} aria-label={`Edit ${mission.title}`} title="Edit mission"><Pencil size={14}/></button>}{onDelete&&<button className="mission-icon-button mission-delete" onClick={onDelete} aria-label={`Delete ${mission.title}`} title="Remove mission"><Trash2 size={14}/></button>}</div></div></article>;
+}
