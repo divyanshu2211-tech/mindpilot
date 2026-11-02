@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.netlify/
+.vercel/
+*.local
+.DS_Store
+MindPilot-project.zip

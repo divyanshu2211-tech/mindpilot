@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "MindPilot Personal Growth Workspace",
+  "short_name": "MindPilot",
+  "description": "A private daily workspace for focus, habits, English practice, and career growth.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f6f7f4",
+  "theme_color": "#f6f7f4",
+  "icons": [
+    {
+      "src": "/icons/mindpilot.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
